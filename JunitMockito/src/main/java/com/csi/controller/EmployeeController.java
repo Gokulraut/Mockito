@@ -58,4 +58,15 @@ public class EmployeeController {
 
         return ResponseEntity.ok("Id deleted Successfully");
     }
+	
+	 @GetMapping("/sayhello")
+     public ResponseEntity<String>sayHello(){
+	 return ResponseEntity.ok("hello");
+    }
+
+    @GetMapping("/sayby")
+    public ResponseEntity<String>sayBy(){
+        return ResponseEntity.ok("byee");
+    }
+
 }
